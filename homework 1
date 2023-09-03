@@ -1,0 +1,11 @@
+ticket = input("Введите номер билета, номер билета состоит из 6 цифр") 
+if len(ticket) != 6: 
+    print ("Указано не верное число, укажите число с 6 цифрами") 
+firstthreenum = ticket [3:] 
+lastthreenum = ticket [:3]
+first_sum = int(firstthreenum[0]) + int(firstthreenum[1]) + int(firstthreenum[2])
+last_sum = int(lastthreenum[3]) + int(lastthreenum[4]) + int(lastthreenum[5]) 
+if first_sum == last_sum:
+    print ("Счастливый билет") 
+else:
+    print ("Your Suck") 
